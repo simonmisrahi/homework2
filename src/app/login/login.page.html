@@ -1,28 +1,55 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
-<ion-grid>
-    <ion-row justify-content-center>
-      <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
-        <div text-center>
-          <h4>Login Form</h4>
-        </div>
-        <div padding>
-          <ion-item>
-            <ion-input type="text" placeholder="Username"></ion-input>
-          </ion-item>
-  
-          <ion-item>
-            <ion-input type="password" placeholder="Password"></ion-input>
-          </ion-item>
-        </div>
-  
-        <div padding>
-          <ion-button size="large" (click)="navToExplore()" expand="block">Login</ion-button>
-        </div>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <h2 style="text-align:center">Login with Social Media or Manually</h2>
+      <div class="vl">
+        <span class="vl-innertext">or</span>
+      </div>
 
+      <div class="col">
+        <a href="#" class="fb btn">
+          <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+        </a>
+        <a href="#" class="twitter btn">
+          <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+        </a>
+        <a href="#" class="google btn">
+          <i class="fa fa-google fa-fw"></i> Login with Google+
+        </a>
+      </div>
+
+      <div class="col">
+        <div class="hide-md-lg">
+          <p>Or sign in manually:</p>
+        </div>
+
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <ion-button size="large" (click)="navToExplore()" expand="block">Login</ion-button>
+        <ion-button size="large" (click)="navToRegister()" expand="block">Register</ion-button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div class="bottom-container">
+  <div class="row">
+    <div class="col">
+      <a href="#" style="color:white" class="btn">Sign up</a>
+    </div>
+    <div class="col">
+      <a href="#" style="color:white" class="btn">Forgot password?</a>
+    </div>
+  </div>
+</div>
+
+      
+        
+ 
+
+
+    
+
+        
+        
+  

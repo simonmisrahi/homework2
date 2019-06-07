@@ -1,46 +1,49 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Profile</ion-title>
-  </ion-toolbar>
-</ion-header>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
 
-<ion-header>
-    <ion-toolbar>
-      <ion-title style="text-align: center;"> Simon Misrahi
-      </ion-title>
-      <div class="ion-padding">
-          <ion-avatar
-          class="avatar">
-              <img src="https://scontent.fopo2-2.fna.fbcdn.net/v/t1.0-9/50472029_1502749366535283_7744550084569726976_o.jpg?_nc_cat=100&_nc_ht=scontent.fopo2-2.fna&oh=3b14cc85b8f60d47604c4852d42ec860&oe=5D5B2FB1">
-            </ion-avatar>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-30 col-sm-15 col-md-15">
+            <div class="well well-sm">
+                <div class="row">
+                    <div class="col-sm-8 col-md-4">
+                        <img src="https://scontent.flis8-1.fna.fbcdn.net/v/t1.0-9/s720x720/62105339_728269337589651_8887650772792115200_n.jpg?_nc_cat=103&_nc_ht=scontent.flis8-1.fna&oh=3ebd204f51eee7301ba2fba78ae815a2&oe=5D9E86C9" alt="" class="img-rounded img-responsive" />
+                    </div>
+                    <div class="col-sm-8 col-md-6">
+                        <h4>
+                            Simon Misrahi</h4>
+                        <small><cite title="London,England" style="color:black;font-size:28px;">London, England <i class="glyphicon glyphicon-map-marker">
+                        </i></cite></small>
+                        <p style="color:black;font-size:20px;">
+                            <i class="glyphicon glyphicon-envelope"style="color:black;font-size:40px;"></i>simon@misrahifamily,com
+                            <br />
+                            <i class="glyphicon glyphicon-globe"style="color:black;font-size:40px;"></i><a>No available reviews</a>
+                            <br />
+                            <i class="glyphicon glyphicon-gift"style="color:black;font-size:40px;"></i>Joined in August 2017</p>
+                        <!-- Split button -->
+
+                            <ion-item *ngFor="let payment of payments">
+                              {{payment.amount}}
+                             
+                              
+                
+                            </ion-item>
+                      
+                          <ion-button size="large" (click)="navToCheckout()" expand="block">Pay Now</ion-button>
+                            
+                        </div>
+                    </div>   
+                </div>   
+          </div>  
+        </div>   
+    </div> 
+
+      <div padding>
+          <ion-button color="danger" size="large" (click)="navToLogin()" expand="block">Logout</ion-button>
       </div>
-    </ion-toolbar>
-     <ion-list>
-      <ion-item>
-        <ion-label>First Name</ion-label>
-        Simon
-      </ion-item>
-        <ion-item>
-      <ion-label>Last Name</ion-label>
-        Misrahi
-      </ion-item>
-      <ion-item>
-      <ion-label>School</ion-label>
-          New York University
-      </ion-item>
-      <ion-item>
-      <ion-label>Major</ion-label>
-          Computer Science and Economics
-      </ion-item>
-      <ion-item>
-      <ion-label>Date of Birth</ion-label>
-          <ion-datetime
-            disabled
-            displayFormat="MM/DD/YYYY"
-            [(ngModel)]="myDateOfBirth"
-          ></ion-datetime>
-        </ion-item>
-      </ion-list>
+      <ion-content></ion-content>
 
 <ion-content>
 
