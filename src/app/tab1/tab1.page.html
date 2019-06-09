@@ -1,16 +1,53 @@
-
-<ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-back-button defaultHref="home"></ion-back-button>
-    </ion-buttons>
-    <ion-title style="text-align: center;"> Welcome to Air Bnb</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<div class="ion-padding">
-        <img src="https://media.wired.com/photos/5926c14ef3e2356fd800a56a/master/pass/airbnb_horizontal_lockup_white_print.jpg">
+<ion-content class ="mainscreen" >
+  <ion-card class="card">
+      <ion-card-header class="card-header">
+        Explore 
+      </ion-card-header>
+      <ion-card-subtitle style ="margin: 0px 10px"> Let's go on a journey together! </ion-card-subtitle>
+      <ion-card-content>
+      <ion-list>
+        <ion-item> 
+          <ion-label> Where? </ion-label>
+         <form placeholder = "New York, USA" action ="/action_page.php">
+            <select name ="numGuestsRange">
+              <option value ="Not entered">---</option>
+              <option value="2-4" > Lisbon, Portugal </option>
+              <option value="2-4" > London, England </option>
+              <option value="2-4" > Chernobyl, Ukraine </option>
+              <option value="2-4" > Sicicily, Italy </option>
+              <option value="2-4" > Barbados </option>
+              <option value="2-4" > Reading, England </option>
+            </select>
+          </form>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+           People:
+          </ion-label>   
+          <form style ="text-align: left" style="text-align: left" action ="/action_page.php">
+            <select name ="numGuestsRange">
+              <option value ="Not entered">---</option>
+              <option value="2-4" > 1-3 </option>
+              <option value="2-4" > 3-5 </option>
+              <option value="2-4" > 5-7 </option>
+              <option value="2-4" > 8+ </option>
+    
+            </select>
+          </form>
+        
+          </ion-item>
+          <ion-item>
+          <ion-label>From: </ion-label>
+                  <ion-datetime placeholder = "06/09" display-format="MM/DD/YYYY" picker-format="MMMM DD YYYY" min ="2019" max = "2030"></ion-datetime>
+                 
+            </ion-item>
+            <ion-item>
+              <ion-label> To: </ion-label>
+               <ion-datetime placeholder = "06/09" display-format="MM/DD/YYYY" picker-format="MMMM DD YYYY" min ="2019" max = "2030"></ion-datetime>
+              </ion-item>
+      </ion-list>   
+      <ion-button color="danger" (click)="navToExplore()" > Explore </ion-button>
+      </ion-card-content>
   
-</div>
-
-<ion-content></ion-content>
+  </ion-card>
+</ion-content>

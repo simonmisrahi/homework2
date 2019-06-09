@@ -3,61 +3,58 @@
     <ion-button color="danger" size="large" (click)="navToRental()" expand="block">Your Trips</ion-button>
 </div>
 
-<h2> Recommened for you</h2>
-   
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="text-align:center ">
+      Recommened For You
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-list class = "grid">
+  
+    <ion-card>
+      <ion-card-content>
+        <p style ="font-size: 20px"> <b> Barcelona </b></p>
+        <p> <b> Owner: </b> Luis Suarez. </p> 
+        <p> <b> Cost: </b> $6900 a week </p>
+        <p> <b> Rating </b> 4.5/5 </p>
+ 
+        <img class = "avatar" src = "https://www.luxhabitat.es/media/properties/3454/19-04-04_lux_bcn_pearson-83_21.jpg">    
+      </ion-card-content>
+    </ion-card>
+  
+    <ion-card>
+      <ion-card-content>
+        <p style ="font-size: 20px"> <b>  London </b></p>
+        <p> <b> Owner: </b> Elton John </p> 
+        <p> <b> Cost: </b> $200000 a week </p>
+        <p> <b> Rating </b> 4.7/5 </p>
+
+        <img class = "avatar" src ="https://www.londonnewsonline.co.uk/wp-content/uploads/2018/09/Forest-Mews-Robert-and-Jessica-Barker-SMALL-797x445.jpg">
+           
+      </ion-card-content>
+    </ion-card>
     
-    <!-- Portfolio Gallery Grid -->
-    <div class="row">
-      <div class="column">
-        <div class="content">
-          <img src="https://cdn.trendir.com/wp-content/uploads/old/house-design/assets_c/2013/11/barcelona-house-with-imposing-exterior-and-sweet-central-courtyard-5-thumb-970xauto-26272.jpg" style="width:100%">
-          <p>Price: $1200 a week</p>
-          <p>Owner: Elton John</p>
-          <p>Availibility: Open</p>
-          <p>Destination: London</p>
-          <p>Rating: 4.69</p>
-        </div>
-      </div>
-      <div class="column">
-        <div class="content">
-          <img src="https://www.luxhabitat.es/media/properties/3454/19-04-04_lux_bcn_pearson-83_21.jpg" style="width:100%">
-          <p>Price: $850 a week</p>
-          <p>Owner: Enzo Misrahi</p>
-          <p>Availibility: Open</p>
-          <p>Destination: Sicicly</p>
-          <p>Rating: 5.00</p>p>
-        </div>
-      </div>
-      <div class="column">
-        <div class="content">
-          <img src="https://previews.123rf.com/images/iriana88w/iriana88w1608/iriana88w160801279/61420060-american-craftsman-house-exterior-view-of-entry-door-and-porch-with-concrete-stairs-nice-landscape-d.jpg" style="width:100%">
-          <p>Owner: Luis suarex</p> 
-          <p>Price: $6200 a week</p>
-          <p>Availibility: Open</p>
-          <p>Destination: Barcelona</p>
-          <p>Rating: 4.78</p>
-        </div>
-      </div>
-      <div class="column">
-        <div class="content">
-          <img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fkeithflamer%2Ffiles%2F2018%2F10%2FScreen-Shot-2018-11-01-at-4.35.01-PM-1200x674.jpg" style="width:100%">
-          <p>Owner: John Doe</p> 
-          <p>Price: $16200 a week</p>
-          <p>Availibility: Open</p>
-          <p>Destination: Los Angeles</p>
-          <p>Rating: 4.78</p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="content">
-      <img src="http://www.perfectpropertypurchases.com/wp-content/uploads/2012/03/north-miami-beach-homes.jpg" style="width:100%">
-          <p>Owner: John Doe</p> 
-          <p>Price: $13200 a week</p>
-          <p>Availibility: Open</p>
-          <p>Destination: Miami</p>
-          <p>Rating: 4.78</p>
-    </div>
+    <ion-card>
+      <ion-card-content>
+        <p style ="font-size: 20px"> <b> Barbados </b></p>
+        <p> <b> Owner: </b> Rhianna </p> 
+        <p> <b> Cost: </b> $55000 a week </p>
+        <p> <b> Rating </b> 4.9/5 </p>
+     
+        <img class = "avatar" src = "https://www.elegantresorts.co.uk/WebImages/ImageStore1/182424.jpg">
+      </ion-card-content>
+    </ion-card>
+  
+  </ion-list>
+
+</ion-content>
+
+  
+     
 
 
 

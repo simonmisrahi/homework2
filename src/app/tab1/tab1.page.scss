@@ -1,5 +1,31 @@
-.avatar{
-  margin: auto;
-  height: 115% !important;
-  width: 40% !important;
-    }
+.mainscreen {
+  --background: none;  
+    background-image:url("https://wallpapercave.com/wp/wp2844035.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+    width: 100%;
+    height: 246px;
+    margin: left;
+    z-index: 2;
+    position: left;
+}
+
+.card {
+  background: white;
+  transform: translateX(-50%) translateY(-50%);
+  top: 50%;
+  left: 20%;
+  position: absolute;
+  width: 30%;
+
+.card-header {
+      position: left;
+      text-align: left;
+      font-size: 2.0em;
+      width: 100%;
+      font-weight: bold;
+      color:q;
+  }
+}

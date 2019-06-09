@@ -50,11 +50,6 @@ export class RegisterPage {
   }
   ngOnInit() {
 }
-// navToLogin() {
-
-
-//   this.navCtrl.navigateForward('');
-// }
 
 }
       

@@ -17,6 +17,13 @@ export class Tab3Page {
     navToRental() {
       this.navCtrl.navigateForward('rental');
     }
+    
+      navToExplore() {
+               
+        
+      this.navCtrl.navigateForward('tabs');
+              }
+    }
 
-}
+
 
